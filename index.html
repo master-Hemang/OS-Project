@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Graph and Pie Chart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--   	<script src="script,js"><script/> -->
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Power Consumption and Activity Monitor</h1>
+      <!-- <input type="button" value="Reload Page" onClick="reload"> -->
+      <div class="button">
+        <button onclick="window.location.reload();">Reload Page</button>
+      </div>
+    </div>
+    <div class="items">
+      <div class="graph">
+        <h2>Power Consumed(in Watts) V/S Time(in Seconds)</h2>
+        <canvas id="myChart" width="500" height="300"></canvas>
+      </div>
+      <div class="pie">
+        <canvas id="myPieChart" width="400"></canvas>
+      </div>
+
+      <div class="hist">
+        <h2>CPU USAGE :</h2>
+        <br />
+        <canvas id="histogram"></canvas>
+      </div>
+
+      <table id="myTable">
+        <tr>
+          <th>pid</th>
+          <th>name</th>
+          <th>read_bytes</th>
+          <th>write_bytes</th>
+          <th>status</th>
+          <th>create_time</th>
+          <th>n_threads</th>
+        </tr>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
